@@ -3,10 +3,19 @@
     document.getElementById("run").addEventListener("click", function() {
         
         let num = Number(document.getElementById("number").value);
-        let result="";
-          result = (num * (num - 1));
+
+        function factorialize(num) {
+            if (num < 0) 
+                  return -1;
+            else if (num == 0) 
+                return 1;
+            else {
+                return (num * factorialize(num - 1));
+            }
+          }
            
-        alert (result)
+          factorialize(num);
+          alert  (factorialize(num))
 });
 
 })();
