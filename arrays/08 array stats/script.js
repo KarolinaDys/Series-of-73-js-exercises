@@ -15,6 +15,13 @@
         "cherry",
     ];
 
-    // your code here
+   document.getElementById("run").addEventListener("click", function(){
+       if(fruits.includes("apple")){
+        alert(" yes " + fruits.indexOf("apple")+ " apple ");
+       }
+       else{
+           alert(" no " + "apple" ) 
+       }
+   })
 
 })();
