@@ -79,5 +79,15 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function (){
+        const name = people.findIndex(function(el) {
+            return el.firstname === "Jean" && el.lastname === "Dupont";
+        
+        
+        })
+        
+        console.log( name);
+        console.log(people[name]);
+    })
 
 })();
