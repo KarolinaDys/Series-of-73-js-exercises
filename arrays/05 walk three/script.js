@@ -28,6 +28,12 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function (){
+        const name = people.map(function(el) {
+            return el.firstname ;
+        });
+    
+        console.log(name);
+    })
 
 })();
