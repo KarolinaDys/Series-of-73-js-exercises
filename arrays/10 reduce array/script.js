@@ -77,7 +77,17 @@
             age: 81,
         },
     ];
-
-    // your code here
-
+    document.getElementById("run").addEventListener("click", function(){
+     let age = people.map(function(el){
+       return el.age;
+     })
+     console.log (age)
+    sum = age.reduce(function(a , b) {
+        return a + b;
+      });
+     console.log(sum);
+     var total = [0, 1, 2, 3].reduce(function(a, b) {
+        return a + b;
+      });
+    }); 
 })();
