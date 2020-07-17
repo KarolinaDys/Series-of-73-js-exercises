@@ -16,7 +16,8 @@
         "raisin",
         "cerise",
     ];
-
-    // your code here
-
+   document.getElementById("run").addEventListener("click", function(){
+    const uniquefruits = [...new Set(fruits)]
+     alert (uniquefruits)
+});
 })();
