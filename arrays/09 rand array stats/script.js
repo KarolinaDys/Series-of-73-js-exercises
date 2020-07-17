@@ -6,9 +6,8 @@
             min = 1;
             max = 100;
             return (Math.random() * (max - min)) + min;
-             
-        }
-    const tab =[
+             }
+      const tab =[
         document.getElementById("n-1").innerHTML = Math.round(number()),
         document.getElementById("n-2").innerHTML = Math.round(number()),
         document.getElementById("n-3").innerHTML = Math.round(number()),
@@ -23,17 +22,18 @@
     function compareNr(a, b) {
         return a - b
     }
+    let sum = 0;
+    for (i = 0; i < tab.length; i++) {
+      sum = sum + tab[i];
+
+    }
+    let result = 0;
+    result = sum / tab.length
+
     document.getElementById("min").innerHTML = tab.sort(compareNr)[0];
     document.getElementById("max").innerHTML = tab.sort(compareNr)[9];
-          let sum = 0;
-          for (i = 0; i < tab.length; i++) {
-            sum = sum + tab[i];
-    
-          }
-          document.getElementById("sum").innerHTML = sum;    
-          let result = 0;
-           result = sum / tab.length
-         document.getElementById("average").innerHTML = result;
+    document.getElementById("sum").innerHTML = sum;     
+    document.getElementById("average").innerHTML = result;
 
     })    
 })();
