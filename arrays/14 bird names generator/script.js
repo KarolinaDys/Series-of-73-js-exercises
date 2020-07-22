@@ -26,6 +26,25 @@
         "tangent",
         "sported",
     ]);
+    document.getElementById("run").addEventListener("click", function(){
+    let bird = [];
+    let adjective = [];
+    
+    let arrAdjective = Array.from(adjectives);
 
-    // your code here
-})();
+    bird.push(birds[Math.floor(Math.random() * birds.length)]);
+    adjective.push(
+      arrAdjective[Math.floor(Math.random() * arrAdjective.length)]
+    );
+    console.log(bird);
+    console.log(adjective);
+
+    if (bird[0].num == 1) {
+      document.getElementById("target").innerHTML =
+        "A" + " " + adjective + " " + bird[0].name;
+    } else {
+      document.getElementById("target").innerHTML =
+        "A few" + " " + adjective + " " + bird[0].name + "s";
+    }
+})
+  })();
