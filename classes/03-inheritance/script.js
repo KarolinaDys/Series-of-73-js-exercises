@@ -16,4 +16,26 @@
         }
     }
     // your code here
+    class Dog extends Animal  {
+        constructor(name, greeting){
+            super(name, greeting);
+            this.constructor.greeting = greeting;
+            this.name =name;
+            
+         }
+}
+    class Cat extends Animal{
+        constructor(name, greeting){
+            super(name, greeting);
+            this.constructor.greeting = greeting;
+            this.name =name
+         }
+
+    }
+    const azor = new Dog("Dog","Azor");
+    const fluffy = new Cat ("Cat","Fluffy");
+document.getElementById("run").addEventListener("click",function(){
+    console.log(azor.sayHello());
+    console.log(fluffy.sayHello());
+});
 })();
