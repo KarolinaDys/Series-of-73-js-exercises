@@ -12,5 +12,16 @@
 (function() {
 
     // your code here
-
+    const paragraphs = document.querySelectorAll(".target")
+    
+    const paragraph1 = paragraphs[0];
+    const paragraph2 = paragraphs[1];
+    const paragraph3 = paragraphs[2];
+    const paragraph4 = paragraphs[3];
+    const paragraph5 = paragraphs[4];
+     paragraph5.innerHTML = "owned"
+     paragraph4.innerHTML = "owned"
+     paragraph3.innerHTML = "owned"
+     paragraph2.innerHTML = "owned"
+     paragraph1.innerHTML = "owned"
 })();
