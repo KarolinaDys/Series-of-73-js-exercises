@@ -11,4 +11,29 @@
 
 (() => {
     // your code here
+    class Person {
+        constructor(firstname , lastname){
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+
+
+        get name  () {
+         return this.firstname + " " + this.lastname ;
+
+}
+        set name(value){
+            const parts = value.split(" ");
+            this.firstname = parts[0];
+            this.lastname = parts[1];
+        }
+
+    }
+
+        const karolina = new Person ("Karolina", "Dys")
+        console.log(karolina.name)
+        
+        karolina.name = 'Jack Sparrow'
+        console.log(karolina.firstname)
+
 })();
