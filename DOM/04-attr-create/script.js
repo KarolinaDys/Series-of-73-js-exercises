@@ -12,5 +12,9 @@
 (function() {
 
     // your code here
-
+    cat = document.createElement("img");
+    cat.setAttribute("src",(document.getElementById("source")).getAttribute("data-image")); 
+    document.getElementById("target").appendChild(cat);
+    document.getElementById("source").removeAttribute("data-image");
+    
 })();
