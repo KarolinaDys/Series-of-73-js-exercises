@@ -11,6 +11,12 @@
 
 (function() {
 
-    // your code here
+    const board = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+    let html = "<table>"
+    for (i=0;i<board.length;i++)
+        {html += "<tr> <td>" +board[i] + "</td> </tr>"}
+    html += "</table>"
+    let table = document.createElement("tr");    
+    document.getElementById("target").innerHTML = html;
 
 })();

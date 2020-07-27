@@ -12,5 +12,16 @@
 (function() {
 
     // your code here
+    let html = "<table>"
+    for (i = 1; i < 11; i++) {
+        html += "<tr>"
+        for (j = 1; j < 11; j++) {
+            html += " <td>" + i * j + "</td>"
+        }
+        html += "</tr>"
+    }
+    html += "</table>"
+    let table = document.createElement("tr");
+    document.getElementById("target").innerHTML = html;
 
 })();
