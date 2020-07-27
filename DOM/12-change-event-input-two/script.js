@@ -12,5 +12,12 @@
 (function() {
 
     // your code here
+    document.getElementById("pass-one").addEventListener("input",function(){
+        console.log("a");
+    if (document.getElementById("pass-one").value.length > 7 && document.getElementById("pass-one").value.match(/\d\w*\d/g))
+    { document.getElementById("validity").innerText = "OK" }
+    else
+    { document.getElementById("validity").innerText = "Not OK" }  
+    })
 
 })();
