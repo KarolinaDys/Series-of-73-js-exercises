@@ -11,6 +11,13 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        if(document.getElementById("pass-one").value == document.getElementById("pass-two").value){
+            document.getElementById('pass-two').style["border-color"] = "green";
+        }
+        else{
 
-})();
+         document.getElementById('pass-two').style["border-color"] = "red";}
+    })
+
+})(); 
