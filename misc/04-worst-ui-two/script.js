@@ -9,11 +9,7 @@ document.getElementById('part-one').innerHTML
 + document.getElementById('part-three').innerHTML 
 + document.getElementById('part-four').innerHTML
 };
-let x = 0;
-let min = 0;
-let max = 9;
-x >= min;
-x <= max;
+
 document.getElementById('part-one').addEventListener("click", function(){
    document.getElementById('part-one').innerHTML = (Number(document.getElementById('part-one').innerHTML)+ Math.round((00) + 1));
    update();
